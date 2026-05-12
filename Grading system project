@@ -1,0 +1,41 @@
+print("School_Marking system")
+
+Average1 = "F"
+Average2 = "F+"
+Average3 = "E"
+Average4 = "D"
+Average5 = "C"
+Average6 = "B"
+Average7 = "A"
+Average8 = "A+"
+
+name = input("Enter Name: ")
+surname = input("Enter Surname: ")
+Mark = int(input("Mark average: "))
+
+if Mark <=24:
+   print("You failed")
+   print("You failed",name,surname,"your Level is",Average1)
+
+elif Mark <=49:
+     print("Try better")
+     print("You failed",name,surname,"your Level is",Average2)
+
+elif Mark <=74:
+     print("Well Done")
+     print("You Passed", name, surname,"your Level is",Average3)
+
+elif Mark <=84:
+     print("Keep it up")
+     print("You Passed",name,surname,"your Level is",Average6)
+
+elif Mark <=94:
+     print("Excellent")
+     print("You were excellent",name,surname,"your Level is",Average7)
+
+elif Mark <= 100:
+    print("Outstanding")
+    print("You did outsanding work",name,surname,"your Level is",Average8)
+
+else:
+    print("Invalid Mark")
