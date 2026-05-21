@@ -1,0 +1,27 @@
+print("=== Discipline Tracker ===")
+
+coding = input("Did you code today? (yes/no): ").lower()
+studying = input("Did you study today? (yes/no): ").lower()
+reading = input("Did you read today? (yes/no): ").lower()
+
+score = 0
+
+if coding == "yes":
+    score += 1
+
+if studying == "yes":
+    score += 1
+
+if reading == "yes":
+    score += 1
+
+print("\nYour discipline score is:", score, "/3")
+
+if score == 3:
+    print("Excellent consistency today.")
+elif score == 2:
+    print("Good work. Keep improving.")
+elif score == 1:
+    print("Small progress is still progress.")
+else:
+    print("Reset and try again tomorrow.")
